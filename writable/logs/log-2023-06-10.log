@@ -1,0 +1,2310 @@
+ERROR - 2023-06-10 04:43:37 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'new_pea' in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 C:\Program Files\Ampps\www\pea-news\app\Models\NewsModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Ampps\www\pea-news\app\Controllers\Home.php(12): App\Models\NewsModel->getNews()
+#8 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'new_pea' in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#5 C:\Program Files\Ampps\www\pea-news\app\Models\NewsModel.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Program Files\Ampps\www\pea-news\app\Controllers\Home.php(12): App\Models\NewsModel->getNews()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#12 {main}
+CRITICAL - 2023-06-10 04:43:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'new_pea'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Models\NewsModel.php(17): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 04:44:32 --> mysqli_sql_exception: Table 'pea_news.news' doesn't exist in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 C:\Program Files\Ampps\www\pea-news\app\Models\NewsModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Program Files\Ampps\www\pea-news\app\Controllers\Home.php(12): App\Models\NewsModel->getNews()
+#8 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#13 {main}
+CRITICAL - 2023-06-10 04:44:32 --> Table 'pea_news.news' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH\Models\NewsModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Home.php(12): App\Models\NewsModel->getNews()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:46:04 --> Call to a member function getNews() on null
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:47:03 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:12 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:13 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:13 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:47 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:49 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:50 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:50 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:51 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:51 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:51 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:51 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:48:51 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:50:27 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:50:28 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:50:28 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:50:28 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:50:29 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:50:59 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:51:00 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:54:35 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:54:36 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:54:36 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:54:37 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:54:37 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 04:54:44 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:55:28 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:55:28 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:55:29 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:55:29 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:56:51 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:56:51 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:56:52 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:56:52 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:56:52 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:56:52 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:08 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:09 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:09 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:09 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:09 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:09 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:39 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:40 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:40 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:40 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:40 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:40 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:41 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:57:41 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:02 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:02 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:02 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:03 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:03 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:03 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:03 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:03 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:03 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:04 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:04 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:04 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:04 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:04 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:05 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:05 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:05 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:05 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:37 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:58:38 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 04:59:48 --> Call to undefined method App\Models\Articles::initController
+in SYSTEMPATH\Model.php on line 842.
+ 1 SYSTEMPATH\CodeIgniter.php(907): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:03:32 --> Undefined variable: title
+in APPPATH\Views\templates\header.php on line 13.
+ 1 APPPATH\Views\templates\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(17): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:04:24 --> Invalid file: "pages/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(18): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:07:02 --> Undefined variable: page_title
+in APPPATH\Views\templates\header.php on line 13.
+ 1 APPPATH\Views\templates\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:07:35 --> Undefined variable: page_title
+in APPPATH\Views\templates\header.php on line 13.
+ 1 APPPATH\Views\templates\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:07:35 --> Undefined variable: page_title
+in APPPATH\Views\templates\header.php on line 13.
+ 1 APPPATH\Views\templates\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:07:56 --> Undefined variable: page_title
+in APPPATH\Views\templates\header.php on line 13.
+ 1 APPPATH\Views\templates\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:07:56 --> Undefined variable: page_title
+in APPPATH\Views\templates\header.php on line 13.
+ 1 APPPATH\Views\templates\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:08:09 --> Undefined variable: article_title
+in APPPATH\Views\pages\create.php on line 1.
+ 1 APPPATH\Views\pages\create.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(43): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:08:10 --> Undefined variable: article_title
+in APPPATH\Views\pages\create.php on line 1.
+ 1 APPPATH\Views\pages\create.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(43): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-10 05:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 05:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 05:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 05:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 05:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 05:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 05:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 05:14:39 --> CSRF token verified.
+ERROR - 2023-06-10 05:14:39 --> mysqli_sql_exception: Unknown column 'slug' in 'field list' in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(71): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->create()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-10 05:14:39 --> Unknown column 'slug' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(71): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-10 05:16:06 --> CSRF token verified.
+CRITICAL - 2023-06-10 05:16:14 --> Undefined variable: news_item
+in APPPATH\Views\pages\index.php on line 12.
+ 1 APPPATH\Views\pages\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(18): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:19:12 --> Invalid file: "news/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:19:37 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:19:38 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:20 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:21 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:22 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:22 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:22 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:22 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:22 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:30 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:56 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:57 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:57 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:36:58 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:37:58 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:37:58 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:39:16 --> Undefined index: articles
+in APPPATH\Controllers\Articles.php on line 32.
+ 1 APPPATH\Controllers\Articles.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:39:26 --> Undefined index: articles
+in APPPATH\Controllers\Articles.php on line 32.
+ 1 APPPATH\Controllers\Articles.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:39:27 --> Undefined index: articles
+in APPPATH\Controllers\Articles.php on line 32.
+ 1 APPPATH\Controllers\Articles.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:39:27 --> Undefined index: articles
+in APPPATH\Controllers\Articles.php on line 32.
+ 1 APPPATH\Controllers\Articles.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:39:28 --> Undefined index: articles
+in APPPATH\Controllers\Articles.php on line 32.
+ 1 APPPATH\Controllers\Articles.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 05:39:32 --> Invalid file: "articles/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Articles.php(35): view()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->view()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-10 06:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 09:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-10 09:19:17 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-10 09:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-10 09:19:29 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 10:08:11 --> Argument 2 passed to view() must be of the type array, string given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 100
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Articles.php(100): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 10:08:12 --> Argument 2 passed to view() must be of the type array, string given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 100
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Articles.php(100): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 10:18:24 --> file_get_contents(assets/data/data): failed to open stream: No such file or directory
+in APPPATH\Controllers\Articles.php on line 85.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\Articles.php(85): file_get_contents()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 10:18:25 --> file_get_contents(assets/data/data): failed to open stream: No such file or directory
+in APPPATH\Controllers\Articles.php on line 85.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\Articles.php(85): file_get_contents()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 10:18:43 --> file_get_contents(http://news.pea.local/assets/data/data): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+in APPPATH\Controllers\Articles.php on line 85.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\Articles.php(85): file_get_contents()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 10:18:45 --> file_get_contents(http://news.pea.local/assets/data/data): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+in APPPATH\Controllers\Articles.php on line 85.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\Articles.php(85): file_get_contents()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 10:23:09 --> file_get_contents(http://news.pea.local/assets/data/data): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+in APPPATH\Controllers\Articles.php on line 85.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\Articles.php(85): file_get_contents()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 11:57:25 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(100): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 11:58:19 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(100): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 11:58:20 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(100): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 11:58:35 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(100): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 11:58:36 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(100): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 11:58:36 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(100): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:20 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:23 --> Undefined variable: json_data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:43 --> Undefined variable: data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:44 --> Undefined variable: data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:45 --> Undefined variable: data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:45 --> Undefined variable: data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:45 --> Undefined variable: data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:45 --> Undefined variable: data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:13:45 --> Undefined variable: data
+in APPPATH\Views\pages\json.php on line 1.
+ 1 APPPATH\Views\pages\json.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:16:57 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:19:07 --> get_object_vars() expects parameter 1 to be object, array given
+in APPPATH\Views\pages\json.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\pages\json.php(5): get_object_vars()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\Articles.php(101): view()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:19:46 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\pages\json.php on line 6.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:19:47 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\pages\json.php on line 6.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:24:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:25:18 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:25 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:27 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:27 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:27 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:27 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:28 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:28 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:26:36 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\json.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Articles.php(101): view()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:29:40 --> Invalid argument supplied for foreach()
+in APPPATH\Views\pages\json.php on line 8.
+ 1 APPPATH\Views\pages\json.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:38:36 --> Invalid argument supplied for foreach()
+in APPPATH\Views\pages\json.php on line 8.
+ 1 APPPATH\Views\pages\json.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:38:37 --> Invalid argument supplied for foreach()
+in APPPATH\Views\pages\json.php on line 8.
+ 1 APPPATH\Views\pages\json.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:54:46 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:54:48 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:54:48 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:54:48 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:55:31 --> Undefined variable: arrayData
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:55:32 --> Undefined variable: arrayData
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:55:32 --> Undefined variable: arrayData
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:55:33 --> Undefined variable: arrayData
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:55:33 --> Undefined variable: arrayData
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:55:33 --> Undefined variable: arrayData
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 12:55:33 --> Undefined variable: arrayData
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:04:04 --> Illegal string offset 'title'
+in APPPATH\Views\pages\json.php on line 5.
+ 1 APPPATH\Views\pages\json.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(101): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:10:37 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 98.
+ 1 APPPATH\Controllers\Articles.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:11:09 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:07 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:08 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:08 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:08 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:09 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:09 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:09 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:12:09 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 2.
+ 1 APPPATH\Views\pages\json.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:13:21 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 98.
+ 1 APPPATH\Controllers\Articles.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:13:22 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 98.
+ 1 APPPATH\Controllers\Articles.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:14:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:14:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:14:54 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 98.
+ 1 APPPATH\Controllers\Articles.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:16:04 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 98.
+ 1 APPPATH\Controllers\Articles.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:17:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:18:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:18:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:18:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:18:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:18:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:18:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(112): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:19:39 --> Undefined index: author
+in APPPATH\Controllers\Articles.php on line 91.
+ 1 APPPATH\Controllers\Articles.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:20:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 7.
+ 1 APPPATH\Views\pages\json.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(107): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:20:49 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 4.
+ 1 APPPATH\Views\pages\json.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(107): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:20:50 --> Array to string conversion
+in APPPATH\Views\pages\json.php on line 4.
+ 1 APPPATH\Views\pages\json.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(107): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:21:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 8.
+ 1 APPPATH\Views\pages\json.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(107): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:27:17 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 98.
+ 1 APPPATH\Controllers\Articles.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:27:23 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 98.
+ 1 APPPATH\Controllers\Articles.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:43:22 --> Argument 1 passed to url_title() must be of the type string, null given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 109
+in SYSTEMPATH\Helpers\url_helper.php on line 531.
+ 1 APPPATH\Controllers\Articles.php(109): url_title()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:43:23 --> Argument 1 passed to url_title() must be of the type string, null given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 109
+in SYSTEMPATH\Helpers\url_helper.php on line 531.
+ 1 APPPATH\Controllers\Articles.php(109): url_title()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:43:56 --> Argument 1 passed to url_title() must be of the type string, null given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 109
+in SYSTEMPATH\Helpers\url_helper.php on line 531.
+ 1 APPPATH\Controllers\Articles.php(109): url_title()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:43:57 --> Argument 1 passed to url_title() must be of the type string, null given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 109
+in SYSTEMPATH\Helpers\url_helper.php on line 531.
+ 1 APPPATH\Controllers\Articles.php(109): url_title()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:43:57 --> Argument 1 passed to url_title() must be of the type string, null given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 109
+in SYSTEMPATH\Helpers\url_helper.php on line 531.
+ 1 APPPATH\Controllers\Articles.php(109): url_title()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:43:57 --> Argument 1 passed to url_title() must be of the type string, null given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 109
+in SYSTEMPATH\Helpers\url_helper.php on line 531.
+ 1 APPPATH\Controllers\Articles.php(109): url_title()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:43:57 --> Argument 1 passed to url_title() must be of the type string, null given, called in C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php on line 109
+in SYSTEMPATH\Helpers\url_helper.php on line 531.
+ 1 APPPATH\Controllers\Articles.php(109): url_title()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:47:48 --> Undefined index: title
+in APPPATH\Controllers\Articles.php on line 99.
+ 1 APPPATH\Controllers\Articles.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:49:40 --> Undefined index: published_date
+in APPPATH\Controllers\Articles.php on line 94.
+ 1 APPPATH\Controllers\Articles.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:51:18 --> Undefined index: published_date
+in APPPATH\Controllers\Articles.php on line 94.
+ 1 APPPATH\Controllers\Articles.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:51:19 --> Undefined index: published_date
+in APPPATH\Controllers\Articles.php on line 94.
+ 1 APPPATH\Controllers\Articles.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 13:51:19 --> Undefined index: published_date
+in APPPATH\Controllers\Articles.php on line 94.
+ 1 APPPATH\Controllers\Articles.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 14:09:51 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Articles.php on line 107.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists()
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 14:17:42 --> Undefined index: url_image
+in APPPATH\Controllers\Articles.php on line 109.
+ 1 APPPATH\Controllers\Articles.php(109): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 14:18:12 --> Undefined index: url_image
+in APPPATH\Controllers\Articles.php on line 110.
+ 1 APPPATH\Controllers\Articles.php(110): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 14:18:28 --> Undefined index: published_date
+in APPPATH\Controllers\Articles.php on line 111.
+ 1 APPPATH\Controllers\Articles.php(111): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 14:18:38 --> Undefined index: slug
+in APPPATH\Controllers\Articles.php on line 113.
+ 1 APPPATH\Controllers\Articles.php(113): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:23:23 --> mysqli_sql_exception: Column 'author' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:23:23 --> Column 'author' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:23:23 --> mysqli_sql_exception: Column 'author' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:23:23 --> Column 'author' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:23:23 --> mysqli_sql_exception: Column 'author' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:23:23 --> Column 'author' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:23:24 --> mysqli_sql_exception: Column 'author' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:23:24 --> Column 'author' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:24:13 --> mysqli_sql_exception: Column 'author' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:24:13 --> Column 'author' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:24:22 --> mysqli_sql_exception: Column 'author' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:24:22 --> Column 'author' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:24:23 --> mysqli_sql_exception: Column 'author' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:24:23 --> Column 'author' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:25:34 --> mysqli_sql_exception: Column 'description' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:25:34 --> Column 'description' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:25:47 --> mysqli_sql_exception: Column 'url_image' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:25:47 --> Column 'url_image' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(118): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+CRITICAL - 2023-06-10 14:26:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\pages\json.php on line 8.
+ 1 APPPATH\Views\pages\json.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Program Files\\Ampps\\www\\pea-news\\app\\Views\\pages\\json.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Articles.php(128): view()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')
+ERROR - 2023-06-10 14:27:16 --> mysqli_sql_exception: Column 'content' cannot be null in C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert()
+#7 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#8 C:\Program Files\Ampps\www\pea-news\app\Controllers\Articles.php(116): CodeIgniter\BaseModel->save()
+#9 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+#10 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Program Files\Ampps\www\pea-news\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Program Files\Ampps\www\pea-news\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Program File...')
+#14 {main}
+CRITICAL - 2023-06-10 14:27:16 --> Column 'content' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Articles.php(116): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Articles->upload_json_file()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Program Files\\Ampps\\www\\pea-news\\public\\index.php')

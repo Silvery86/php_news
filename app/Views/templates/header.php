@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/owl-slider.css'); ?>"/>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/custombox.min.css'); ?>"/>
         <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.png'); ?>" />
-    <title><?= esc($title) ?></title>
+    <title><?= esc($page_title) ?></title>
 </head>
 <body>
 <header id="header" class="header-v2">

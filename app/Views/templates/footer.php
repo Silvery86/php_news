@@ -91,6 +91,4 @@
     <script  src="<?php echo base_url('assets/js/legacy.min.js'); ?>"></script>
     <script  src="<?php echo base_url('assets/js/store.js'); ?>"></script>
     </body>
-
-   
 </html>

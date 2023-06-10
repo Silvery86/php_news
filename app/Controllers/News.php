@@ -34,7 +34,7 @@ class News extends BaseController
         $data['title'] = $data['news']['title'];
 
         return view('templates/header', $data)
-            . view('news/view')
+            . view('pages/view')
             . view('templates/footer');
     }
 

@@ -4,6 +4,8 @@ namespace Config;
 
 use App\Controllers\News;
 use App\Controllers\Pages;
+use App\Controllers\Articles;
+use App\Controllers\FileUpload;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
@@ -32,12 +34,16 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-// $routes->match(['get', 'post'], 'news/create', [News::class, 'create']);
-// $routes->get('news/(:segment)', [News::class, 'view']);
-// $routes->get('news', [News::class, 'index']);
-$routes->get('pages', [Pages::class, 'index']);
-$routes->get('(:segment)', [Pages::class, 'view']);
+//$routes->get('/', 'Home::index');
+
+$routes->match(['get', 'post'], 'articles/create', [Articles::class, 'create']);
+$routes->get('articles/(:segment)', [Articles::class, 'view']);
+$routes->get('articles', [Articles::class, 'index']);
+$routes->get('json', [Articles::class, 'upload_json_file']);
+$routes->get('/file-upload', [FileUpload::class,'index']);
+$routes->post('/multiple-file-upload', [FileUpload::class,'multipleUpload']);
+// $routes->get('pages', [Pages::class, 'index']);
+// $routes->get('(:segment)', [Pages::class, 'view']);
 
 /*
  * --------------------------------------------------------------------
